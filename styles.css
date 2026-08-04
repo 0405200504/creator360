@@ -1120,6 +1120,11 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   transform: translateY(140%);
   transition: transform .45s var(--ease);
 }
+.sticky-cta svg {
+  width: 15px; height: 15px;
+  fill: none; stroke: currentColor;
+  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
+}
 .sticky-cta.is-visible { transform: translateY(0); }
 @media (max-width: 720px) { .sticky-cta { display: flex; } }
 
