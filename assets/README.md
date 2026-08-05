@@ -8,7 +8,7 @@ do HTML e o CSS correspondente saiu junto.
 
 | Arquivo | Onde | Formato | O que é |
 |---|---|---|---|
-| `vold/og-creator360.jpg` | `<meta property="og:image">` | 1200×630 | Card de compartilhamento (WhatsApp, Instagram, X). Pode ser puramente gráfico: fundo preto, "CREATOR 360" em Outfit 800 e um detalhe lime — **não precisa de foto**. |
+| `vold/og-kit-creator-pack.jpg` | `<meta property="og:image">` | 1200×630 | Card de compartilhamento (WhatsApp, Instagram, X). Pode ser puramente gráfico: fundo preto, "KIT CREATOR PACK" em Outfit 800 e um detalhe lime — **não precisa de foto**. |
 
 Enquanto esse arquivo não existir, o link compartilhado aparece sem imagem de preview.
 O resto da página funciona normalmente.

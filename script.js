@@ -1,5 +1,5 @@
 /* ===========================================================
-   CREATOR 360 — interações
+   KIT CREATOR PACK — interações
    Sem dependências. Tudo degrada bem se o JS falhar.
    =========================================================== */
 (function () {
@@ -125,7 +125,7 @@
           window.location.href = CHECKOUT_URL;
         } else {
           e.preventDefault();
-          console.warn('[Creator 360] CHECKOUT_URL ainda não configurada em script.js');
+          console.warn('[Kit Creator Pack] CHECKOUT_URL ainda não configurada em script.js');
         }
       }
     });
@@ -136,7 +136,7 @@
   var campos = document.querySelectorAll('[data-fill]').length;
   if (slots || campos) {
     console.info(
-      '%c[CREATOR 360] Pendências: ' + slots + ' imagem(ns) e ' + campos + ' dado(s) a preencher.',
+      '%c[KIT CREATOR PACK] Pendências: ' + slots + ' imagem(ns) e ' + campos + ' dado(s) a preencher.',
       'background:#C9F94D;color:#060606;padding:4px 10px;border-radius:6px;font-weight:700'
     );
   }
