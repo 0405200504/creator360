@@ -263,15 +263,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   gap: 24px;
 }
 
-/* botão do topo escondido até a pessoa passar pelos módulos (script.js).
-   Só fade: o transform é do hover do .btn. visibility tira do Tab e do clique. */
-.nav__cta {
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity .5s ease, visibility .5s, transform .35s var(--ease), background .25s ease;
-}
-.nav__cta.is-visible { opacity: 1; visibility: visible; }
-
 .nav__logo {
   display: inline-flex;
   align-items: center;
@@ -1136,36 +1127,6 @@ button { font: inherit; color: inherit; background: none; border: 0; cursor: poi
   margin-top: 28px;
   color: var(--txt-dark-3);
 }
-
-/* ===========================================================
-   STICKY CTA (mobile)
-   =========================================================== */
-.sticky-cta {
-  position: fixed;
-  left: 16px; right: 16px; bottom: 16px;
-  z-index: 90;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  gap: 10px;
-  padding: 17px;
-  border-radius: var(--r-pill);
-  background: var(--lime);
-  color: var(--black);
-  font-family: var(--font-display);
-  font-weight: 700;
-  letter-spacing: -.02em;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, .45);
-  transform: translateY(140%);
-  transition: transform .45s var(--ease);
-}
-.sticky-cta svg {
-  width: 15px; height: 15px;
-  fill: none; stroke: currentColor;
-  stroke-width: 1.8; stroke-linecap: round; stroke-linejoin: round;
-}
-.sticky-cta.is-visible { transform: translateY(0); }
-@media (max-width: 720px) { .sticky-cta { display: flex; } }
 
 /* ===========================================================
    REVEAL

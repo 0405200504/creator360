@@ -13,34 +13,10 @@
 
   /* ---------- nav: fundo ao rolar ---------- */
   var nav = document.getElementById('nav');
-  var sticky = document.querySelector('.sticky-cta');
-  var navCta = document.querySelector('.nav__cta');
-  var gatilho = document.getElementById('modulos');
-  var liberado = !gatilho;
   var ticking = false;
 
   function onScroll() {
-    var y = window.scrollY;
-
-    if (nav) nav.classList.toggle('is-stuck', y > 24);
-
-    // botões de compra (topo e fixo) só aparecem quando o fim dos módulos
-    // entra na tela; depois de liberados, não somem mais ao subir
-    if (!liberado && gatilho.getBoundingClientRect().bottom < window.innerHeight) {
-      liberado = true;
-    }
-    if (navCta) navCta.classList.toggle('is-visible', liberado);
-
-    // CTA fixo some quando a oferta está na tela
-    if (sticky) {
-      var oferta = document.getElementById('oferta');
-      var naOferta = false;
-      if (oferta) {
-        var r = oferta.getBoundingClientRect();
-        naOferta = r.top < window.innerHeight && r.bottom > 0;
-      }
-      sticky.classList.toggle('is-visible', liberado && !naOferta);
-    }
+    if (nav) nav.classList.toggle('is-stuck', window.scrollY > 24);
     ticking = false;
   }
 
