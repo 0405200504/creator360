@@ -14,7 +14,9 @@
   /* ---------- nav: fundo ao rolar ---------- */
   var nav = document.getElementById('nav');
   var sticky = document.querySelector('.sticky-cta');
-  var hero = document.querySelector('.hero');
+  var navCta = document.querySelector('.nav__cta');
+  var gatilho = document.getElementById('modulos');
+  var liberado = !gatilho;
   var ticking = false;
 
   function onScroll() {
@@ -22,16 +24,22 @@
 
     if (nav) nav.classList.toggle('is-stuck', y > 24);
 
-    // CTA fixo aparece depois do hero e some quando a oferta está na tela
-    if (sticky && hero) {
-      var passouHero = y > hero.offsetHeight * 0.8;
+    // botões de compra (topo e fixo) só aparecem quando o fim dos módulos
+    // entra na tela; depois de liberados, não somem mais ao subir
+    if (!liberado && gatilho.getBoundingClientRect().bottom < window.innerHeight) {
+      liberado = true;
+    }
+    if (navCta) navCta.classList.toggle('is-visible', liberado);
+
+    // CTA fixo some quando a oferta está na tela
+    if (sticky) {
       var oferta = document.getElementById('oferta');
       var naOferta = false;
       if (oferta) {
         var r = oferta.getBoundingClientRect();
         naOferta = r.top < window.innerHeight && r.bottom > 0;
       }
-      sticky.classList.toggle('is-visible', passouHero && !naOferta);
+      sticky.classList.toggle('is-visible', liberado && !naOferta);
     }
     ticking = false;
   }
@@ -95,12 +103,25 @@
     });
   });
 
-  /* ---------- marquee: pausa fora da tela ---------- */
-  var track = document.querySelector('.marquee__track');
-  if (track && !reduced && 'IntersectionObserver' in window) {
-    new IntersectionObserver(function (entries) {
-      track.style.animationPlayState = entries[0].isIntersecting ? 'running' : 'paused';
-    }).observe(track);
+  /* ---------- esteiras (marquee + capas): pausam fora da tela ---------- */
+  if (!reduced && 'IntersectionObserver' in window) {
+    document.querySelectorAll('.marquee__track, .capas__track').forEach(function (track) {
+      new IntersectionObserver(function (entries) {
+        track.classList.toggle('is-paused', !entries[0].isIntersecting);
+      }).observe(track);
+    });
+  }
+
+  /* ---------- capas: o lazy nativo só carrega o que já entrou na faixa,
+     então a capa chegava vazia pela direita. Ao se aproximar, baixa todas. ---------- */
+  var capas = document.querySelector('.capas');
+  if (capas && 'IntersectionObserver' in window) {
+    var capasIo = new IntersectionObserver(function (entries) {
+      if (!entries[0].isIntersecting) return;
+      capas.querySelectorAll('img[loading="lazy"]').forEach(function (img) { img.loading = 'eager'; });
+      capasIo.disconnect();
+    }, { rootMargin: '600px 0px' });
+    capasIo.observe(capas);
   }
 
   /* ---------- CTA: ponto único de tracking + checkout ----------

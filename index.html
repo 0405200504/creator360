@@ -4,13 +4,13 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>KIT CREATOR PACK — por RAFA VOLD</title>
-<meta name="description" content="Você reconhece um vídeo bom. Só não consegue fazer o seu ficar assim. +50 ganchos, +10 formatos, efeitos sonoros e a ferramenta que limpa o áudio do celular. R$ 39,90." />
+<meta name="description" content="Todo mundo tá crescendo, menos você. +50 ganchos, +10 formatos, efeitos sonoros e a ferramenta que limpa o áudio do celular. A pasta de criação do RAFA VOLD por R$ 39,90." />
 <meta name="theme-color" content="#060606" />
 
 <!-- OG / social — TROCAR a imagem quando o material oficial chegar -->
 <meta property="og:type" content="website" />
 <meta property="og:title" content="KIT CREATOR PACK — por RAFA VOLD" />
-<meta property="og:description" content="Você reconhece um vídeo bom. Só não consegue fazer o seu ficar assim. A pasta de criação do RAFA VOLD." />
+<meta property="og:description" content="Todo mundo tá crescendo. Menos você. A pasta de criação do RAFA VOLD." />
 <!-- TODO(assets): card 1200x630 só com tipografia/logo — não precisa de foto. Ver assets/README.md -->
 <meta property="og:image" content="assets/vold/og-kit-creator-pack.jpg" />
 
@@ -47,8 +47,9 @@
       <a href="#faq">FAQ</a>
     </nav>
 
-    <a class="btn btn--lime btn--sm" href="#oferta" data-cta="nav">
-      Quero começar
+    <!-- escondido até a pessoa passar pelos módulos (script.js) -->
+    <a class="btn btn--lime btn--sm nav__cta" href="#oferta" data-cta="nav">
+      Quero meu Kit
       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" /></svg>
     </a>
   </div>
@@ -67,7 +68,7 @@
     <!-- ================= VSL / VTurb ================= -->
     <div class="hero__video reveal" data-reveal-delay="1">
       <span class="hero__video-label mono">
-        <b aria-hidden="true"></b> Dá o play antes de decidir
+        <b aria-hidden="true"></b> Dá o play antes de rolar
       </span>
 
       <div class="vsl">
@@ -86,32 +87,26 @@
 
     <div class="hero__copy">
       <h1 class="hero__title reveal" data-reveal-delay="2">
-        Você reconhece<br />
-        um vídeo bom.<br />
-        Só não consegue<br />
-        <em>fazer o seu.</em>
+        Todo mundo<br />
+        tá crescendo.<br />
+        Menos<br />
+        <em>você.</em>
       </h1>
 
       <p class="hero__lead reveal" data-reveal-delay="3">
-        Você salva referência, acompanha creator, sabe na hora se um vídeo é bom
-        ou não. Aí abre a câmera e não sai nada parecido. Eu fiquei anos desse
-        lado da tela, e o que me tirou de lá não foi mais um tutorial: foi ter
-        uma pasta pronta pra abrir na hora de gravar. O Kit Creator Pack é essa
-        pasta.
+        Você salva referência, acompanha creator, sabe na hora quando um vídeo é
+        bom. Aí posta o seu e ele morre com 40 views, metade delas você mesmo
+        assistindo de novo. Enquanto isso, gente que começou depois de você, com
+        bem menos pra falar, já tá fechando publi. A diferença entre vocês cabe
+        numa pasta. O Kit Creator Pack é a minha.
       </p>
 
-      <div class="hero__actions reveal" data-reveal-delay="4">
-        <a class="btn btn--lime" href="#oferta" data-cta="hero-primaria">
-          Quero começar a criar
-          <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" /></svg>
-        </a>
-        <a class="btn btn--ghost" href="#metodo">Ver o que vem junto</a>
-      </div>
-
-      <ul class="hero__facts reveal" data-reveal-delay="5">
-        <li><span class="mono">01</span> Tá na sua mão cinco minutos depois</li>
-        <li><span class="mono">02</span> Serve pro vídeo que você grava hoje</li>
-        <li><span class="mono">03</span> Saiu da minha pasta, não de teoria</li>
+      <!-- sem botão de compra aqui de propósito: o primeiro CTA só aparece
+           depois que a pessoa passa pelos módulos -->
+      <ul class="hero__facts reveal" data-reveal-delay="4">
+        <li><span class="mono">01</span> Acesso liberado na hora da compra</li>
+        <li><span class="mono">02</span> Dá pra usar no vídeo de hoje à noite</li>
+        <li><span class="mono">03</span> Saiu do meu perfil, não de teoria</li>
       </ul>
     </div>
   </div>
@@ -144,13 +139,14 @@
         <span class="pill pill--outline reveal">O DIAGNÓSTICO</span>
 
         <h2 class="h2 reveal">
-          Não é falta<br />de ideia.<br />É falta<br />de direção.
+          Quantos vídeos<br />tão morrendo<br />no seu<br />rascunho?
         </h2>
 
         <p class="lead reveal">
-          Já era pra alguém ter te falado: quase nunca é o conteúdo. É que você
-          senta pra gravar sem nada decidido, e o vídeo já se perdeu ali, antes
-          de você abrir a câmera.
+          Abre sua galeria agora. Aposto que tem vídeo ali que nunca saiu, porque
+          na hora de postar bateu a vergonha. E já era pra alguém ter te falado:
+          quase nunca o problema é você. Você senta pra gravar sem nada decidido,
+          e o vídeo já começa perdido antes de você abrir a câmera.
         </p>
 
         <!-- Leitura própria do RAFA VOLD a partir de DM/mentoria — o rótulo
@@ -188,29 +184,29 @@
         <article class="ncard reveal">
           <span class="ncard__num mono">01</span>
           <span class="ncard__tag">Os 3 primeiros segundos</span>
-          <h3>Você enrola justo<br />onde não pode.</h3>
-          <p>Aquele "oi gente, hoje eu vou falar sobre" já custou metade da sua audiência. A pessoa decide ficar ou sair antes de você terminar a primeira frase. E ela sai.</p>
+          <h3>Você perde a pessoa<br />no "oi gente".</h3>
+          <p>Quando você começa a se apresentar, o dedo dela já tá no meio da tela. Você passou duas horas gravando e ela decidiu em um segundo e meio. Foi embora sem nem saber o que você ia falar.</p>
         </article>
 
         <article class="ncard reveal">
           <span class="ncard__num mono">02</span>
           <span class="ncard__tag">Página em branco</span>
-          <h3>Toda vez você<br />começa do zero.</h3>
-          <p>Abre a câmera sem saber como começa, onde corta, como termina. Grava oito vezes, acha tudo forçado, apaga e fecha o app. Isso cansa muito mais rápido do que falta de ideia.</p>
+          <h3>Oito takes.<br />Nenhum presta.</h3>
+          <p>Você abre a câmera sem saber como começa, onde corta, como termina. Grava, assiste, acha forçado, grava de novo. No oitavo take fecha o app e promete que amanhã faz. Amanhã acontece igual.</p>
         </article>
 
         <article class="ncard reveal">
           <span class="ncard__num mono">03</span>
           <span class="ncard__tag">Produção</span>
-          <h3>O áudio<br />te entrega.</h3>
-          <p>Imagem tremida todo mundo releva. Som abafado, com eco de quarto, ninguém aguenta dois segundos — é ali que o vídeo passa a parecer amador. E dá pra resolver sem comprar microfone nenhum.</p>
+          <h3>Você tem vergonha<br />da própria voz.</h3>
+          <p>Eco de quarto, som abafado, barulho da rua. Imagem tremida todo mundo releva, mas som ruim ninguém aguenta dois segundos, e é ali que seu vídeo passa a parecer amador. Dá pra resolver sem comprar microfone nenhum.</p>
         </article>
       </div>
 
     </div>
 
     <div class="callout reveal">
-      Nenhuma dessas três coisas tem a ver com talento. As três se resolvem antes de você apertar o rec, e é exatamente isso que tem dentro do Kit.
+      Nenhuma dessas três coisas tem a ver com talento. Ninguém te entregou o mapa, então cada vídeo vira tentativa e erro. Dentro do Kit tá o que resolve as três antes de você apertar o rec.
     </div>
   </div>
 </section>
@@ -221,10 +217,10 @@
 <section class="section section--paper metodo" id="metodo">
   <div class="wrap wrap--center">
     <span class="pill pill--dark reveal">O MÉTODO</span>
-    <h2 class="h2 h2--display reveal">São quatro<br />pontos de queda.</h2>
+    <h2 class="h2 h2--display reveal">Seu vídeo morre<br />em quatro lugares.</h2>
     <p class="lead lead--center reveal">
-      Um vídeo se perde em quatro lugares, e normalmente você só enxerga um
-      deles. Separei o material seguindo exatamente esses quatro.
+      E normalmente você só enxerga um deles. Os outros três continuam matando
+      seus vídeos em silêncio, toda semana. Montei o Kit em cima desses quatro.
     </p>
   </div>
 
@@ -233,9 +229,9 @@
       <article class="pillar reveal">
         <span class="pillar__num mono">01</span>
         <h3>Gancho</h3>
-        <p>É onde você perde mais gente. E é a única parte que quase todo mundo improvisa na hora de gravar.</p>
+        <p>É onde você perde mais gente. E é justo a parte que você improvisa na hora de gravar.</p>
         <ul>
-          <li>+50 aberturas pra escolher em vez de inventar</li>
+          <li>+50 aberturas prontas pra escolher</li>
           <li>Você troca as palavras pro seu tema e grava</li>
           <li>Dá pra entender por que cada uma segura</li>
         </ul>
@@ -244,21 +240,21 @@
       <article class="pillar reveal" data-reveal-delay="1">
         <span class="pillar__num mono">02</span>
         <h3>Formato</h3>
-        <p>É o esqueleto do vídeo. Decidido antes, você senta pra gravar já sabendo onde a coisa termina.</p>
+        <p>Sem esqueleto, você grava sem saber onde termina e o vídeo fica andando em círculo até a pessoa desistir.</p>
         <ul>
           <li>+10 formatos que eu já rodei muito</li>
           <li>Do primeiro segundo ao corte final</li>
-          <li>Acaba o "tá, mas o que eu posto?"</li>
+          <li>Acaba o "tá, mas o que eu posto hoje?"</li>
         </ul>
       </article>
 
       <article class="pillar reveal" data-reveal-delay="2">
         <span class="pillar__num mono">03</span>
         <h3>Som</h3>
-        <p>Ninguém elogia áudio bom, mas todo mundo sai quando ele está ruim. É o conserto mais rápido que existe.</p>
+        <p>Ninguém elogia áudio bom. Mas todo mundo vai embora quando ele tá ruim, e é o conserto mais rápido que existe.</p>
         <ul>
           <li>Som de celular entra sujo e sai limpo</li>
-          <li>Sem comprar microfone nenhum</li>
+          <li>Sem gastar um real com microfone</li>
           <li>Os efeitos que tiram seu corte do cru</li>
         </ul>
       </article>
@@ -266,11 +262,11 @@
       <article class="pillar reveal" data-reveal-delay="3">
         <span class="pillar__num mono">04</span>
         <h3>Corte</h3>
-        <p>Você não precisa virar editor. Precisa saber as poucas coisas que mudam alguma coisa de verdade.</p>
+        <p>Você não precisa virar editor. Precisa parar de perder três horas numa timeline pra um vídeo de trinta segundos.</p>
         <ul>
-          <li>Chega de pular de tutorial em tutorial</li>
+          <li>Só o que muda o resultado de verdade</li>
           <li>O reels de teste jogando a seu favor</li>
-          <li>Ritmo, sem três horas na timeline</li>
+          <li>Chega de pular de tutorial em tutorial</li>
         </ul>
       </article>
     </div>
@@ -285,20 +281,48 @@
     <div class="sec-head reveal">
       <div>
         <span class="pill pill--outline">O QUE VEM JUNTO</span>
-        <h2 class="h2">Sete atalhos que<br />você abre no<br />vídeo de hoje.</h2>
+        <h2 class="h2">Tudo que eu queria<br />ter tido quando<br />comecei.</h2>
       </div>
       <p class="sec-head__side">
-        Não é aula pra assistir e anotar. É arquivo pra deixar aberto do lado
-        enquanto você grava, e ferramenta pra rodar no vídeo de hoje.
+        Dez módulos, e nenhum é aula de duas horas pra assistir e esquecer.
+        Você deixa aberto do lado do celular enquanto grava e usa no vídeo de hoje.
       </p>
     </div>
+  </div>
 
+  <!-- capas da área de membros em esteira; a 2ª cópia só fecha o loop -->
+  <div class="capas reveal">
+    <ul class="capas__track" aria-label="Capas dos módulos da área de membros">
+      <li class="capa"><img src="assets/capas/01-reels-teste.webp" alt="Capa do módulo Reels teste" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/02-ganchos-estrategicos.webp" alt="Capa do módulo Ganchos estratégicos" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/03-formatos-de-conteudo.webp" alt="Capa do módulo Formatos de conteúdo" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/04-dicas-extras.webp" alt="Capa do módulo Dicas extras" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/05-grupo-de-networking.webp" alt="Capa do módulo Grupo de networking" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/06-audio-dos-videos.webp" alt="Capa do módulo Como melhorar o áudio dos seus vídeos" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/07-margens-do-instagram.webp" alt="Capa do módulo Respeitando as margens do Instagram" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/08-sfx.webp" alt="Capa do módulo SFX (Sound Effects)" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/09-pare-de-inventar-a-roda.webp" alt="Capa do módulo Pare de inventar a roda" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa"><img src="assets/capas/10-edicao-de-video-basica.webp" alt="Capa do módulo Edição de vídeo básica" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/01-reels-teste.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/02-ganchos-estrategicos.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/03-formatos-de-conteudo.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/04-dicas-extras.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/05-grupo-de-networking.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/06-audio-dos-videos.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/07-margens-do-instagram.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/08-sfx.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/09-pare-de-inventar-a-roda.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+      <li class="capa" aria-hidden="true"><img src="assets/capas/10-edicao-de-video-basica.webp" alt="" width="480" height="853" loading="lazy" decoding="async" /></li>
+    </ul>
+  </div>
+
+  <div class="wrap">
     <ol class="mods">
       <li class="mod reveal">
         <span class="mod__num mono">01</span>
         <div class="mod__body">
           <h3>+50 ganchos estratégicos</h3>
-          <p>Aberturas que eu já usei e vi segurando. Você nunca mais encara a câmera sem saber qual é a primeira frase.</p>
+          <p>As aberturas que eu já usei e vi segurando gente. Você nunca mais encara a câmera sem saber qual é a primeira frase.</p>
         </div>
         <span class="mod__tag">Gancho</span>
       </li>
@@ -306,7 +330,7 @@
         <span class="mod__num mono">02</span>
         <div class="mod__body">
           <h3>+10 formatos de conteúdo validados</h3>
-          <p>Dez esqueletos de vídeo prontos. Quando bater o "tá, mas o que eu posto?", você pega um e preenche.</p>
+          <p>Dez esqueletos de vídeo prontos. Bateu o "o que eu posto hoje?", você pega um, preenche com o seu assunto e grava.</p>
         </div>
         <span class="mod__tag">Formato</span>
       </li>
@@ -314,7 +338,7 @@
         <span class="mod__num mono">03</span>
         <div class="mod__body">
           <h3>Ferramenta exclusiva de áudio</h3>
-          <p>Você joga o áudio do celular ali e ele sai limpo do outro lado. É o que faz o vídeo parar de soar caseiro.</p>
+          <p>Você joga o áudio do celular ali e ele sai limpo do outro lado. É o que faz seu vídeo parar de soar gravado no quarto.</p>
         </div>
         <span class="mod__tag">Som</span>
       </li>
@@ -322,7 +346,7 @@
         <span class="mod__num mono">04</span>
         <div class="mod__body">
           <h3>Pacote de efeitos sonoros</h3>
-          <p>Os sons que eu coloco nos meus cortes. São detalhes pequenos, e são eles que separam vídeo cru de vídeo de creator.</p>
+          <p>Os sons que eu coloco nos meus cortes. É detalhe pequeno, e é ele que separa vídeo cru de vídeo que parece de creator grande.</p>
         </div>
         <span class="mod__tag">Som</span>
       </li>
@@ -330,14 +354,14 @@
         <span class="mod__num mono">05</span>
         <div class="mod__body">
           <h3>Como usar o reels de teste</h3>
-          <p>Dá pra testar um vídeo antes de mostrar pra todo mundo. Você posta sem aquela vontade de apagar cinco minutos depois.</p>
+          <p>O vídeo vai primeiro pra quem não te segue. Se não for bem, seus amigos e seus seguidores nem ficam sabendo que ele existiu.</p>
         </div>
         <span class="mod__tag">Distribuição</span>
       </li>
       <li class="mod reveal">
         <span class="mod__num mono">06</span>
         <div class="mod__body">
-          <h3>Dicas de edição básica</h3>
+          <h3>Edição de vídeo básica</h3>
           <p>Onde cortar, quando deixar respirar, o que tirar. Só o que muda o resultado, sem virar curso de edição.</p>
         </div>
         <span class="mod__tag">Corte</span>
@@ -345,8 +369,32 @@
       <li class="mod reveal">
         <span class="mod__num mono">07</span>
         <div class="mod__body">
-          <h3>E um monte de outras dicas minhas</h3>
-          <p>Coisas que só se aprende errando na frente dos outros. Anos de tentativa e erro que você já pega prontos.</p>
+          <h3>Respeitando as margens do Instagram</h3>
+          <p>Onde não colocar texto nem rosto pra interface do app não cobrir nada. Parece bobagem até você ver sua legenda escondida atrás do botão de curtir.</p>
+        </div>
+        <span class="mod__tag">Enquadramento</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__num mono">08</span>
+        <div class="mod__body">
+          <h3>Pare de inventar a roda</h3>
+          <p>Como pegar o que já funciona e adaptar pro seu jeito, em vez de quebrar a cabeça do zero toda vez que vai gravar.</p>
+        </div>
+        <span class="mod__tag">Processo</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__num mono">09</span>
+        <div class="mod__body">
+          <h3>Grupo de networking</h3>
+          <p>Você entra num grupo com outros creators que tão começando também. Criar sozinho, sem ninguém pra trocar ideia, é o caminho mais rápido pra desistir.</p>
+        </div>
+        <span class="mod__tag">Comunidade</span>
+      </li>
+      <li class="mod reveal">
+        <span class="mod__num mono">10</span>
+        <div class="mod__body">
+          <h3>Dicas extras</h3>
+          <p>Coisas que eu só aprendi errando na frente dos outros. Anos de tentativa e erro que você já pega prontos.</p>
         </div>
         <span class="mod__tag">Extra</span>
       </li>
@@ -428,10 +476,10 @@
         <span class="quem__label mono">É PRA VOCÊ SE</span>
         <ul>
           <li>Você abre a câmera e trava na primeira frase</li>
-          <li>Na sua cabeça o vídeo parecia bem melhor do que ficou</li>
-          <li>Você grava no celular e tem vergonha do som que sai</li>
-          <li>Você prefere arquivo pra usar do que aula pra assistir</li>
-          <li>Você já falou "depois eu começo" vezes demais</li>
+          <li>Tem vídeo no rascunho que você nunca teve coragem de postar</li>
+          <li>Já apagou post porque ficou com vergonha das views</li>
+          <li>Vê gente que começou depois de você passando na sua frente</li>
+          <li>Já falou "segunda eu começo" mais vezes do que consegue contar</li>
         </ul>
       </div>
       <div class="quem__col quem__col--no reveal" data-reveal-delay="1">
@@ -440,7 +488,7 @@
           <li>Você quer um truque pra viralizar amanhã</li>
           <li>Você ainda acredita em horário mágico de postar</li>
           <li>Você espera resultado sem postar nada</li>
-          <li>Você procura curso de marketing com slide bonito</li>
+          <li>Você vai comprar e deixar parado na pasta de downloads</li>
           <li>Você quer mentoria individual, porque aqui não tem</li>
         </ul>
       </div>
@@ -456,9 +504,9 @@
     <span class="pill pill--dark reveal">A OFERTA</span>
     <h2 class="h2 h2--display reveal">Custa menos<br />que mais um<br />mês parado.</h2>
     <p class="lead lead--center reveal">
-      R$ 39,90. Menos que um lanche. Deixei nesse preço de propósito, pra você
-      não pensar duas vezes — porque isso aqui só vale alguma coisa se você
-      abrir e usar essa semana.
+      R$ 39,90. Menos que um lanche, e bem menos do que te custa mais um mês
+      vendo os outros crescerem. Deixei nesse preço de propósito, pro dinheiro
+      não virar mais uma desculpa pra adiar.
     </p>
   </div>
 
@@ -481,7 +529,7 @@
         </div>
 
         <a class="btn btn--dark btn--block" href="https://pay.cakto.com.br/ypczsar_1021437" data-cta="oferta-principal" data-checkout-url="https://pay.cakto.com.br/ypczsar_1021437">
-          Quero os atalhos agora
+          Quero meu Kit agora
           <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" /></svg>
         </a>
 
@@ -493,13 +541,17 @@
       </div>
 
       <ul class="panel__items">
-        <li><span class="mono">01</span> <strong>+50 ganchos</strong> pra nunca mais travar na primeira frase</li>
-        <li><span class="mono">02</span> <strong>+10 formatos</strong> pra nunca mais encarar tela em branco</li>
-        <li><span class="mono">03</span> <strong>A ferramenta de áudio</strong> que salva o som do celular</li>
-        <li><span class="mono">04</span> <strong>Os efeitos sonoros</strong> que tiram seu vídeo do cru</li>
-        <li><span class="mono">05</span> <strong>O reels de teste</strong> pra postar sem queimar ideia boa</li>
-        <li><span class="mono">06</span> <strong>Edição básica</strong>, só o que muda o resultado</li>
-        <li><span class="mono">07</span> <strong>Várias outras dicas minhas</strong>, com 1 ano de acesso</li>
+        <!-- o texto vai num span: o li é flex, e texto solto vira item com gap antes da vírgula -->
+        <li><span class="mono">01</span> <span><strong>+50 ganchos</strong> pra nunca mais travar na primeira frase</span></li>
+        <li><span class="mono">02</span> <span><strong>+10 formatos</strong> pra nunca mais encarar tela em branco</span></li>
+        <li><span class="mono">03</span> <span><strong>A ferramenta de áudio</strong> que salva o som do celular</span></li>
+        <li><span class="mono">04</span> <span><strong>Os efeitos sonoros</strong> que tiram seu vídeo do cru</span></li>
+        <li><span class="mono">05</span> <span><strong>O reels de teste</strong> pra errar sem seus seguidores verem</span></li>
+        <li><span class="mono">06</span> <span><strong>Edição básica</strong>, só o que muda o resultado</span></li>
+        <li><span class="mono">07</span> <span><strong>As margens do Instagram</strong> pra nada ficar escondido</span></li>
+        <li><span class="mono">08</span> <span><strong>Pare de inventar a roda</strong>, adaptando o que já funciona</span></li>
+        <li><span class="mono">09</span> <span><strong>O grupo de networking</strong> pra você não criar sozinho</span></li>
+        <li><span class="mono">10</span> <span><strong>Minhas dicas extras</strong>, com 1 ano de acesso</span></li>
       </ul>
     </div>
   </div>
@@ -531,7 +583,7 @@
 
       <details class="qa reveal">
         <summary><span>Isso é um curso com aulas longas?</span><i aria-hidden="true"></i></summary>
-        <div class="qa__body"><p>Não é. São arquivos e ferramentas: os ganchos, os formatos, os efeitos sonoros, a ferramenta de áudio e as dicas. Você abre, pega o que precisa naquele dia e fecha.</p></div>
+        <div class="qa__body"><p>Não é. São arquivos e ferramentas: os ganchos, os formatos, os efeitos sonoros, a ferramenta de áudio, as dicas e o grupo. Você abre, pega o que precisa naquele dia e fecha.</p></div>
       </details>
 
       <details class="qa reveal">
@@ -566,10 +618,10 @@
       O tempo vai passar<br />de qualquer jeito.
     </h2>
     <p class="cta__lead reveal">
-      Daqui a um mês você vai estar um mês mais velho, com ou sem vídeo postado. A diferença é que quem começou hoje já vai estar no décimo. Por R$ 39,90, vale parar de adiar.
+      Daqui a um mês você vai estar um mês mais velho, com ou sem vídeo postado. Quem começou hoje já vai estar no décimo. E você vai continuar do lado de fora, salvando referência e dizendo que semana que vem começa. Por R$ 39,90, essa decisão é fácil.
     </p>
     <a class="btn btn--lime btn--lg reveal" href="#oferta" data-cta="final">
-      Quero começar a criar
+      Quero parar de adiar
       <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" /></svg>
     </a>
   </div>
@@ -598,9 +650,9 @@
   </div>
 </footer>
 
-<!-- CTA fixo mobile -->
+<!-- CTA fixo mobile: só aparece depois que a pessoa passa pelos módulos (script.js) -->
 <a class="sticky-cta" href="#oferta" data-cta="sticky">
-  Quero começar a criar
+  Quero meu Kit por R$ 39,90
   <svg viewBox="0 0 16 16" aria-hidden="true"><path d="M3 13 13 3M6 3h7v7" /></svg>
 </a>
 
